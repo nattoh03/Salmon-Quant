@@ -9,17 +9,17 @@ https://salmon.readthedocs.io/en/latest/index.html
 - By the way Salmon is an alignment free method, read quantification does not require an input BAM file. 
 - Salmon uses a selective mapping algorithm to align the reads directly to a set of target transcripts from a reference database
 
-###EXPERIMENT !!  **using Salmon to quantify _Anopheles funestus_ reads (from RNASeq sequencing) that maps to transcripts of AnFun3 reference genome** #################
+### EXPERIMENT !!  **using Salmon to quantify _Anopheles funestus_ reads (from RNASeq sequencing) that maps to transcripts of AnFun3 reference genome** #################
 
 # step 1
-##download the reference Transcriptome File
+## download the reference Transcriptome File
 ## download An. funestus genome
 wget https://vectorbase.org/common/downloads/Current_Release/AfunestusFUMOZ/fasta/data/VectorBase-57_AfunestusFUMOZ_AnnotatedTranscripts.fasta -o /home/nattohz/Fun_RNASeq/Refseq
-##download An. funestus  GFF file
+## download An. funestus  GFF file
 wget http://ftp.ensemblgenomes.org/pub/metazoa/release-53/gff3/anopheles_funestus/Anopheles_funestus.AfunF3.53.gff3.gz -o /home/nattohz/Fun_RNASeq/Refseq
 ##
 
-###Study Design File
+### Study Design File
 Download the study design file from dropbox (in .txt file format)
 
 # step 2
@@ -40,7 +40,7 @@ trimmomatic Siaya_Res_R1.fastq.gz Siaya_Res_R2.fastq.gz \
  LEADING:3 TRAILING:3 MINLEN:35
  
  # if there are more than two pairs to be trimmed, a simple script will do this as follows
- #create a script text editor with nano and past the script below, edit the sample names to coincide with appropriate names
+ # create a script text editor with nano and past the script below, edit the sample names to coincide with appropriate names
  nano Trim_raw.sh
  
  #!/usr/bin/env bash
@@ -58,7 +58,7 @@ trimmomatic PE ${sample}_R1.fastq.gz ${sample}_R2.fastq.gz \
  LEADING:3 TRAILING:3 MINLEN:35
  
  ### once trimming is done 
- ##Confirm QC is acceptabe
+ ## Confirm QC is acceptabe
  ## with RNASeq data I will worry much about adapters and NNNNN , wont mind so much about overrepresentation 
  module load fastqc
  fastqc *_paired.fq.gz

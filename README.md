@@ -14,9 +14,9 @@ https://salmon.readthedocs.io/en/latest/index.html
 # step 1
 ## download the reference Transcriptome File
 ## download An. funestus genome
-wget https://vectorbase.org/common/downloads/Current_Release/AfunestusFUMOZ/fasta/data/VectorBase-57_AfunestusFUMOZ_AnnotatedTranscripts.fasta -o /home/nattohz/Fun_RNASeq/Refseq
+wget https://vectorbase.org/common/downloads/Current_Release/AfunestusFUMOZ/fasta/data/VectorBase-57_AfunestusFUMOZ_AnnotatedTranscripts.fasta > /home/nattohz/Fun_RNASeq/Refseq
 ## download An. funestus  GFF file
-wget http://ftp.ensemblgenomes.org/pub/metazoa/release-53/gff3/anopheles_funestus/Anopheles_funestus.AfunF3.53.gff3.gz -o /home/nattohz/Fun_RNASeq/Refseq
+wget http://ftp.ensemblgenomes.org/pub/metazoa/release-53/gff3/anopheles_funestus/Anopheles_funestus.AfunF3.53.gff3.gz > /home/nattohz/Fun_RNASeq/Refseq
 ##
 
 ### Study Design File

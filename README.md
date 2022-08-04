@@ -1,5 +1,5 @@
 # Salmon-Quant
-############ GOAL!!  Quantification of reads - How many reads come from each gene? #######################
+### GOAL!!  Quantification of reads - How many reads come from each gene? #######################
 ### downloaded from
 https://salmon.readthedocs.io/en/latest/index.html
 ### Check version 1.4.0

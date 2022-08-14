@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #Salmon-Quant
-############ GOAL!! Quantification of reads - How many reads come from each gene? #######################
+############ GOAL!! Quantification of reads - How many reads (your sample) come from each gene (from  reference) ? #######################
 
 #if working on PC downloaded from
 https://salmon.readthedocs.io/en/latest/index.html
@@ -15,7 +15,7 @@ Salmon uses a selective mapping algorithm to align the reads directly to a set o
 ###EXPERIMENT !! using Salmon to quantify Anopheles funestus reads (from RNASeq sequencing) that maps to transcripts of AnFun3 reference genome #################
 
 step 1
-##download the reference Transcriptome File
+##download the reference Transcriptome File from the vectorbase
 
 download An. funestus genome
 wget https://vectorbase.org/common/downloads/Current_Release/AfunestusFUMOZ/fasta/data/VectorBase-57_AfunestusFUMOZ_AnnotatedTranscripts.fasta -o /home/nattohz/Fun_RNASeq/Refseq ##download An. funestus GFF file wget http://ftp.ensemblgenomes.org/pub/metazoa/release-53/gff3/anopheles_funestus/Anopheles_funestus.AfunF3.53.gff3.gz -o /home/nattohz/Fun_RNASeq/Refseq
@@ -50,7 +50,8 @@ once trimming is done
 ##Confirm QC is acceptabe
 
 with RNASeq data I will worry much about adapters and NNNNN , wont mind so much about overrepresentation
-module load fastqc fastqc *_paired.fq.gz module load multiqc multiqc .
+module load fastqc 
+fastqc *_paired.fq.gz module load multiqc multiqc .
 
 check combined records or you can do individually by opening the html file on firefox
 #Step 4

@@ -67,9 +67,11 @@ trimmomatic PE ${sample}_R1.fastq.gz ${sample}_R2.fastq.gz \
  multiqc .
  ### check combined records or you can do individually by opening the html file on firefox
  
+ 
  # Step 4
 ## Transcript Quantificaiton with salmon
 ## use trimmed and paired reads to estimate transcript abundance:
+
 
 gunzip /home/nattohz/Fun_RNASeq/Refseq/Anopheles_funestus.AfunF3.53.gff3.gz
 gffread /home/nattohz/Fun_RNASeq/Refseq/Anopheles_funestus.AfunF3.53.gff3 -T -o /home/nattohz/Fun_RNASeq/Refseq/Anopheles_funestus.AfunF3.53.gtf
@@ -83,18 +85,5 @@ salmon quant \
  
 done
  
+ 
 #############  DOWNSTREAM ANALYSIS IN R ############### as follows
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -40,8 +40,8 @@ trimmomatic Siaya_Res_R1.fastq.gz Siaya_Res_R2.fastq.gz \
  ILLUMINACLIP:/home/nattohz/adapters/TruSeq3-PE.fa:2:30:10:2:keepBothReads \
  LEADING:3 TRAILING:3 MINLEN:35
  
- # if there are more than two pairs to be trimmed, a simple script will do this as follows
- # create a script text editor with nano and past the script below, edit the sample names to coincide with appropriate names
+ #### if there are more than two pairs to be trimmed, a simple script will do this as follows
+ #### create a script text editor with nano and past the script below, edit the sample names to coincide with appropriate names
  nano Trim_raw.sh
  
  #!/usr/bin/env bash

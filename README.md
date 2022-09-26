@@ -69,8 +69,8 @@ trimmomatic PE ${sample}_R1.fastq.gz ${sample}_R2.fastq.gz \
  
  
  # Step 4
-## Transcript Quantificaiton with salmon
-## use trimmed and paired reads to estimate transcript abundance:
+### Transcript Quantificaiton with salmon
+### use trimmed and paired reads to estimate transcript abundance:
 
 
 gunzip /home/nattohz/Fun_RNASeq/Refseq/Anopheles_funestus.AfunF3.53.gff3.gz

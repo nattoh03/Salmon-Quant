@@ -31,7 +31,7 @@ salmon index -t /home/nattohz/Fun_RNASeq/RefseqVectorBase-57_AfunestusFUMOZ_Anno
  ls /home/nattohz/Fun_RNASeq/Refseq/salmon_index
 ##### Check out the various index files created in the salmon_index folder created by salmon
 # Step 3
-# quality control
+## quality control
 ## Trim raw reads to remove illumina adapter sequences, NNNN and bad quality reads
 module load trimmomatic
 trimmomatic Siaya_Res_R1.fastq.gz Siaya_Res_R2.fastq.gz \
